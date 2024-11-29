@@ -1,0 +1,325 @@
+/* =============================== */
+/* RESET */
+/* =============================== */
+
+html {
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 1.2;
+	background-color: rgb(17, 20, 20);
+	overflow-wrap: break-word;
+}
+
+body {
+	margin: 0;
+	margin: auto;
+	display: grid;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+	flex-wrap: wrap;
+}
+
+img {
+	width: 100%;
+	image-rendering: pixelated;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	display: inline-block;
+	text-decoration: none;
+
+}
+
+
+a {
+	color: black;
+	text-decoration: none;
+
+	&:hover {
+		color: black;
+	}
+}
+
+
+/* =============================== */
+/* PAGE */
+/* =============================== */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	display: grid;
+	grid-template-rows: 5% 45% 43% 7%;
+	height: 100vh;
+
+}
+
+/* =============================== */
+/* HEADER */
+/* =============================== */
+
+.Header{
+	box-sizing: border-box;
+	display: grid;
+	grid-row: 1;
+	grid-template-columns: 1fr 2fr 1fr;
+	padding: 1rem;
+	top: 0;
+	width: 100%;
+}
+
+.Header--Info{
+	grid-column: 1;
+	justify-self: start;
+	text-align: left;
+}
+
+.Header--Privacy{
+	grid-column: 3;
+	justify-self: end;
+	text-align: right;
+}
+
+.Header--Privacy--Text,
+.Header--Info--Text {
+	padding: .5em;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.4rem;
+}
+
+
+
+/* =============================== */
+/* SEARCHES */
+/* =============================== */
+
+
+.Media--Display{
+	display: block;
+	margin: auto;
+	max-width: 300px;
+	animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  }
+
+#Container--Script{
+	display: grid;
+	grid-row: 2;
+	justify-content: center;
+	align-content: center;
+	padding: 15rem 0 0 0;
+	animation: floatUp 2s ease, fadeIn 5s ease;
+}
+
+@keyframes floatUp {
+	0% {
+		transform: translateY(25px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.JSON--Title {
+	box-sizing: border-box;
+	font-weight: 500;
+	padding: .5em;
+	line-height: 1.6;
+	text-align: center;
+	font-size: 2rem;
+	max-width: 800px;
+	word-wrap: break-word;
+	color: lightgray;
+}
+
+.clickable-url{
+	color: lightgray;
+
+	&:hover {
+		color: #ea4335;
+	}
+
+}
+
+
+/* =============================== */
+/* HOVER STATE */
+/* =============================== */
+
+
+/* Style for each character (span) */
+.hover-text {
+    display: inline-block;
+    padding: 0;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Reset any animations on hover in case it interferes with JavaScript color change */
+.JSON--Title:hover .hover-text {
+    animation: none;
+}
+
+/* =============================== */
+/* Button */
+/* =============================== */
+
+.Resurrect--Container{
+	display: grid;
+	grid-row: 3;
+	justify-content: center;
+	align-content: center;
+	padding: 0 0 15rem 0;
+
+
+}
+
+.Resurrect--Button{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	padding: 0 0 2rem 0;
+	text-align: center;
+}
+
+.Resurrect--Text{ 
+	padding: 2rem 1rem .5rem 1rem;
+	color: black;
+	border-radius: 5rem 5rem 0 0;
+	height: 125px;
+	font-size: 2rem;
+	font-weight: 400;
+	margin: auto;
+	background-color: #ea4335;
+	animation: colorCycle 6s infinite;
+	transition: transform 0.4s ease-out;
+
+	&:hover {
+		transform: scale(1.05); /* Slightly scale up */
+	}
+}
+
+@keyframes colorCycle {
+    0% {
+        background-color: #ea4335;
+		box-shadow: 0 0 10px 5px #ea4335; /* Red glow */
+    }
+    25% {
+        background-color: #34a853; 
+		box-shadow: 0 0 10px 5px #34a853; /* Green glow */
+    }
+    50% {
+        background-color: #fbbc05; 
+		box-shadow: 0 0 10px 5px #fbbc05; /* Yellow glow */
+    }
+    75% {
+        background-color: #4285f4; 
+		box-shadow: 0 0 10px 5px #4285f4; /* Blue glow */
+    }
+
+	100% {
+        background-color: #ea4335;
+		box-shadow: 0 0 10px 5px #ea4335; /* Red glow */
+    }
+}
+
+.Resurrect--Details{
+	font-size: 1rem;
+	font-weight: 300;
+	margin: auto;
+	color: gray;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	padding: 0 0 0 0;
+}
+
+
+
+
+/* =============================== */
+/* FOOTER */
+/* =============================== */
+
+.Footer {
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-row: 4;
+	width: 100%;
+	color: lightgray;
+	background-color: rgb(0, 0, 0);
+}
+
+h4{
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.Privacy{
+	padding: 1rem;
+	grid-column: 1;
+	align-content: center;
+	justify-self: start;
+	
+}
+
+.Info{
+	padding: 1rem;
+	grid-column: 3;
+	align-content: center;
+	justify-self: end;
+}
+
+.Home{
+	padding: 1rem;
+	grid-column: 2;
+	align-content: center;
+	justify-self: center;
+
+}
+
+.Nav--Links{
+	animation: colorCycleText 6s infinite;
+}
+
+@keyframes colorCycleText {
+    0% {
+        color: #ea4335;
+    }
+    25% {
+        color: #34a853; 
+    }
+    50% {
+        color: #fbbc05; 
+    }
+    75% {
+        color: #4285f4; 
+    }
+
+	100% {
+        color: #ea4335;
+    }
+}

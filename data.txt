@@ -1,0 +1,8 @@
+data/file_1.txt
+data/.DS_Store
+data/original_fbcea06c597cc995d017a4ff8a77b4ad.gif
+data/file_2.txt
+data/folder_2/folder_2_file_1.txt
+data/folder_2/folder_1_file_2.txt
+data/folder_1/folder_1_file_1.txt
+data/folder_1/folder_1_file_2.txt
