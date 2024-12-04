@@ -105,7 +105,7 @@ body{
 .Media--Display{
 	display: block;
 	margin: auto;
-	max-height: 600px;
+	max-height: 300px;
 	animation: fadeIn 3s;
 }
 
