@@ -3,7 +3,7 @@ This extension is built to run in Chrome's developer mode. You can use it to bro
 
 Here are instructions on how to use it.
 
-<ol>#### Step 1: Download Google Takeout Data
+#### Step 1: Download Google Takeout Data
   <li>Visit https://takeout.google.com/</li>
   <li>Sign in to the Google Account you'd like to download your data from</li>
   <li>There will be an interface that prompts you to create a new export by selecting the data you'd like to include</li><br>
